@@ -1,0 +1,23 @@
+<nav style="background-color: #2874f0; padding: 10px; display: flex; align-items: center; justify-content: space-between;">
+
+    <div>
+        <a href="{% url 'home' %}" style="color: white; font-weight: bold; font-size: 24px; text-decoration: none;">
+            Shopping
+        </a>
+        <a href="{% url 'home' %}" style="padding-left: 20px; color: white; font-size: 19px;">Home</a>
+    </div>
+
+
+    <form action="{% url 'home' %}" method="get" style="flex: 1; margin: 0 20px;">
+        <input 
+            type="text" 
+            name="query" 
+            placeholder="Search for products..." 
+            style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
+    </form>
+
+
+    <div>
+        <a href="{% url 'cart' %}" style="padding-right: 20px; color: white; font-size: 19px;">Cart</a>
+    </div>
+</nav>

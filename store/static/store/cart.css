@@ -1,0 +1,43 @@
+.card {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: #2874f0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.text-primary:hover {
+    text-decoration: underline;
+}
+
+.text-danger {
+    color: red;
+    font-size: 14px;
+}
+
+.text-danger:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #2874f0;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0a5cbf;
+}

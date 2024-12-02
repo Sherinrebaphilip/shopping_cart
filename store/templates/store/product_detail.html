@@ -1,0 +1,32 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'store/product.css' %}">
+</head>
+
+{% include 'store/_navbar.html' %}
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top" style="height: 300px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <a href="{% url 'add_to_cart' product.id %}" class="btn btn-warning btn-block">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <h1>{{ product.name }}</h1>
+            <p class="text-success" style="font-size: 24px; font-weight: bold;">₹{{ product.price }}</p>
+            <p>{{ product.description }}</p>
+            <h5>Available offers</h5>
+            <ul>
+                <li>5% Unlimited Cashback on Flipkart Axis Bank Credit Card</li>
+                <li>Flat ₹1,200 off on HDFC Bank Credit Card EMI Txns on 6 and 9 months tenure</li>
+                <li>Special Price: Get extra ₹6000 off</li>
+            </ul>
+        </div>
+    </div>
+</div>
